@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inadimplencia"
+version = "1.0.0"
+description = "Linha do tempo, recorrência e risco da inadimplência a partir de snapshots diários"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "numpy>=1.24", "pyarrow>=14", "duckdb>=1.0"]
+
+[project.optional-dependencies]
+drive = ["google-api-python-client>=2.100", "google-auth>=2.20", "openpyxl>=3.1"]
+figuras = ["matplotlib>=3.8"]
+dev = ["pytest>=8", "matplotlib>=3.8"]
+
+[project.scripts]
+inadimplencia = "inadimplencia.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
