@@ -75,9 +75,9 @@ O arquivo de origem é atualizado de hora em hora por outro processo, e a leitur
 
 Cada vendedor recebe a própria planilha, criada a partir de um template e atualizada pela distribuição. Ela traz o ranking dos clientes da carteira, o aging, a composição da dívida por produto e os clientes com mais mensalidades acumuladas:
 
-<img src="docs/img/painel_vendedor.png" width="820" alt="Painel de um vendedor: ranking de clientes, idade das dívidas, composição por produto e acúmulo de mensalidades (dados fictícios)">
+<img src="docs/img/painel_vendedor.png" width="860" alt="Painel de um vendedor: ranking de clientes, idade das dívidas, composição por produto e acúmulo de mensalidades (dados fictícios)">
 
-<sub>Painel de um vendedor fictício. Os dados foram embaralhados pelo `Randomizador.gs`.</sub>
+<sub>Painel de um vendedor fictício, com os dados embaralhados pelo `Randomizador.gs`. A mesma informação da planilha (ranking, aging, produtos e acúmulo de mensalidades) foi reorganizada visualmente para esta apresentação.</sub>
 
 Se nenhuma condição da leitura conferida for atendida, a distribuição espera, tenta de novo e, no limite, aborta sem alterar nada. Um diagnóstico confere versões dos scripts, acessos, gatilhos, frescor das bases e consistência, e grava tudo em uma aba de saúde.
 
