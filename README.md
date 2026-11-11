@@ -85,7 +85,15 @@ Se nenhuma condição da leitura conferida for atendida, a distribuição espera
 
 ### 3. BI para a gestão: risco da carteira
 
-O dashboard de gestão (Looker Studio) mostra o aging, a carteira por vendedor, a concentração e o **Índice de Risco**. Esse índice é uma reserva estimada que cresce de forma quadrática com os dias de atraso, comparada com a tabela da Resolução CMN 2.682:
+O dashboard de gestão (Looker Studio) mostra o aging, a carteira por vendedor, a concentração por cliente e produto, e o **Índice de Risco**:
+
+<img src="docs/img/looker_mapa_vendedores.png" width="820" alt="Dashboard de gestão: mapa de inadimplência por UF, carteira por vendedor com reserva e índice de risco, e maiores clientes">
+
+<img src="docs/img/looker_composicao.png" width="820" alt="Dashboard de gestão: composição da dívida por produto, faixa de atraso e acúmulo de mensalidades">
+
+<sub>Dashboard de gestão no Looker Studio, ligado à cópia anonimizada dos dados (nomes, documentos e valores embaralhados).</sub>
+
+O Índice de Risco é uma reserva estimada que cresce de forma quadrática com os dias de atraso, comparada com a tabela da Resolução CMN 2.682:
 
 <img src="docs/img/curva_reserva.png" width="720" alt="Curva de reserva do modelo comparada à provisão mínima da Res. CMN 2.682">
 
